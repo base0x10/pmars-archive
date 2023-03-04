@@ -2180,7 +2180,7 @@ assemble(fName, aWarrior)
               break;
             }
           buf[i] = 0;
-          if (buf[i - 1] == '\\' && commentfound == FALSE) {        /* line continued */
+          if (i > 0 && buf[i - 1] == '\\' && commentfound == FALSE) {        /* line continued */
             conLine = TRUE;
             buf[--i] = 0;        /* reset */
           } else
