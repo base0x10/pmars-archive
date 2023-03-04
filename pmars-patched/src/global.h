@@ -283,7 +283,7 @@ typedef struct warrior_struct {
   int     instLen;                /* Length of instBank */
   int     offset;                /* Offset value specified by 'ORG' or 'END'.
                                  * 0 is default */
-  short   score[MAXWARRIOR * 2 - 1];
+  int     score[MAXWARRIOR * 2 - 1];
 
   char   *name;                        /* warrior name */
   char   *version;
