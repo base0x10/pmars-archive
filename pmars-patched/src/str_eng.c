@@ -368,6 +368,7 @@ char   *usage_screen =
 
 
 char   *optionsAre = "Options:\n";
+char   *errTooManyOptions = "Error: Too many options\n   Consider increasing OPTNUM in clparse.c\n";
 #ifdef VMS
 char   *readingStdin = "[Reading from sys$input until Ctrl-Z or \"$\"]\n";
 #else
